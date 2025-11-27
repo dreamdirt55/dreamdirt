@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DreamDirt - Buy Land Online</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ------------------ GLOBAL STYLES ------------------ */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0b281c;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* ------------------ NAVBAR ------------------ */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #9df7c2;
+}
+
+nav a {
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+/* ------------------ HERO / PARALLAX ------------------ */
+.hero {
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg') center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 20px auto 0;
+    opacity: 0.9;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #1a5f3f;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0f4028;
+}
+
+/* ------------------ SECTION WRAPPER ------------------ */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Headers */
+section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #9df7c2;
+}
+
+/* ------------------ ABOUT SECTION ------------------ */
+.about-box {
+    background: rgba(255,255,255,0.06);
+    padding: 35px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7rem;
+}
+
+/* ------------------ FEATURES GRID ------------------ */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.07);
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.15);
+}
+
+/* ------------------ COMING SOON ------------------ */
+.coming-soon {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+
+/* ------------------ DEV SHARE OFFER ------------------ */
+.offer-box {
+    background: rgba(255,255,255,0.08);
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8rem;
+    border-left: 4px solid #9df7c2;
+    text-align: left;
+}
+
+.offer-box ul {
+    margin-top: 10px;
+}
+
+/* ------------------ CONTACT ------------------ */
+.contact {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    padding: 20px;
+    background: #05140d;
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.8;
+}
+
+/* ------------------ ANIMATIONS ------------------ */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1.2s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h1>DreamDirt</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#coming">Coming Soon</a>
+        <a href="#offer">Share Offer</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero fade-in">
+    <div>
+        <h2>The Future of Buying Land Online</h2>
+        <p>DreamDirt is bringing verified land listings, virtual tours, and secure online purchasing to your fingertips.</p>
+        <button class="btn" onclick="document.getElementById('coming').scrollIntoView({behavior:'smooth'})">Learn More</button>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About DreamDirt</h2>
+    <div class="about-box fade-in">
+        DreamDirt is a next-generation land marketplace designed to make buying and selling land online fast, safe, 
+        and transparent. Browse verified plots, explore high-detail maps, take virtual tours, and purchase land 
+        — all directly from your phone.
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+    <h2>Powerful App Features</h2>
+
+    <div class="features-grid fade-in">
+        <div class="feature-card">✔ Verified Land Listings</div>
+        <div class="feature-card">✔ Map-Based Search With Filters</div>
+        <div class="feature-card">✔ Secure Online Escrow Payments</div>
+        <div class="feature-card">✔ AI Land Recommendation Engine</div>
+        <div class="feature-card">✔ Virtual Land Tours & Drone Views</div>
+        <div class="feature-card">✔ Seller Dashboard & Tools</div>
+    </div>
+</section>
+
+<!-- COMING SOON -->
+<section id="coming">
+    <h2>DreamDirt App — Coming Soon</h2>
+    <p class="coming-soon fade-in">
+        Our app is currently in advanced development and will launch soon on Android, iOS, and Web.
+        <br><br>
+        Stay tuned for the new era of digital land ownership.
+    </p>
+</section>
+
+<!-- SHARE OFFER -->
+<section id="offer">
+    <h2>We’re Offering Developer Shares</h2>
+
+    <div class="offer-box fade-in">
+        DreamDirt is offering **equity shares** to skilled developers who wish to join the founding team and build 
+        the future of land-buying technology.
+
+        <ul>
+            <li>Mobile Developers (Flutter / React Native)</li>
+            <li>Backend Developers (Node, Django, Firebase)</li>
+            <li>AI / ML Engineers</li>
+            <li>GIS & Map Integration Specialists</li>
+            <li>UI/UX Designers</li>
+        </ul>
+
+        Developers joining early will receive:
+        <ul>
+            <li>⚡ Equity shares (percentage varies by contribution)</li>
+            <li>⚡ Founding team status</li>
+            <li>⚡ Long-term earning potential</li>
+            <li>⚡ Major influence in building DreamDirt</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p class="contact fade-in"s>
+        📧 Email: <strong>dreamdirt5@gmail.com</strong>
+        <br>
+        <button class="btn" onclick="window.location.href='mailto:dreamdirt5@gmail.com'">Email Us</button>
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 DreamDirt — All Rights Reserved.
+</footer>
+
+</body>
+</html>
